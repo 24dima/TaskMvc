@@ -40,7 +40,7 @@
 
             <td>
                 @Html.ActionLink("Редагувати", "Edit", new { id = user.User.Id }) |
-                @Html.ActionLink("Видалити", "Delete", new { id = user.User.Id })
+                @Html.ActionLink("Видалити", "Delete", new { id = user.User.Id }, new {onclick="return confirm('Ви впевненні що хочете видалити запис?' );"})
 
 
             </td>
