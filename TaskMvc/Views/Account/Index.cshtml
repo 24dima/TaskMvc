@@ -1,0 +1,24 @@
+﻿@using Web.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Авторизація";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Авторизація!</h2>
+<div>
+    @using (Html.BeginForm(true))
+    {
+        <p>@Html.ValidationSummary(true)</p>
+        <p>
+            Логін: @Html.TextBoxFor(x => x.UserName) @Html.ValidationMessageFor(x => x.UserName)
+        </p>
+        <p>
+            Пароль: @Html.EditorFor(x => x.Password) @Html.ValidationMessageFor(x => x.Password)
+        </p>
+        <input type="submit" value="Вхід"/>
+    }
+    <p>
+        @Html.ActionLink("зареєструватися", "Register")
+    </p>
+</div>

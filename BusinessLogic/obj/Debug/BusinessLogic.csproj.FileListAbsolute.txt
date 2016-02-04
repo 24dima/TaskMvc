@@ -1,0 +1,13 @@
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\BusinessLogic.dll
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\BusinessLogic.pdb
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\Domain.dll
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\EntityFramework.dll
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\Domain.pdb
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\EntityFramework.xml
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\bin\Debug\Ninject.xml
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\obj\Debug\BusinessLogic.dll
+c:\Users\24dima\documents\visual studio 2013\Projects\TaskMvc\BusinessLogic\obj\Debug\BusinessLogic.pdb

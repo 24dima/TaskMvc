@@ -1,0 +1,57 @@
+﻿@using Web.Models
+
+@model RegisterViewModel
+@{
+    ViewBag.Title = "Реєстрація на сайті";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    <div>
+        <legend>Реєстрація на сайті</legend>
+        <p>
+            @Html.ValidationSummary(true)
+        </p>
+        <div class="editor-field">
+            Логін: @Html.TextBoxFor(x => x.UserName)
+            @Html.ValidationMessageFor(x => x.UserName)
+        </div>
+
+        <div class="editor-field">
+            Пароль: @Html.EditorFor(x => x.Password)
+            @Html.ValidationMessageFor(x => x.Password)
+
+        </div>
+        Пароль ще раз: @Html.EditorFor(x => x.ConfirmPassword)
+        @Html.ValidationMessageFor(x => x.ConfirmPassword)
+
+        <div class="editor-field">
+            Email: @Html.TextBoxFor(x => x.Email)
+            @Html.ValidationMessageFor(x => x.Email)
+        </div>
+
+        <div class="editor-field">
+            Email ще раз:@Html.TextBoxFor(x => x.ConfirmEmail)
+            @Html.ValidationMessageFor(x => x.ConfirmEmail)
+        </div>
+
+        <div class="editor-field">
+            Прізвище:@Html.TextBoxFor(x => x.LastName)
+            @Html.ValidationMessageFor(x => x.LastName)
+        </div>
+
+        <div class="editor-field">
+            Ім'я: @Html.TextBoxFor(x => x.FirstName)
+            @Html.ValidationMessageFor(x => x.FirstName)
+        </div>
+        <div class="editor-field">
+            По батькові: @Html.TextBoxFor(x => x.MiddleName) @Html.ValidationMessageFor(x => x.MiddleName)
+        </div>
+
+        <p>
+            <input type="submit" value="Завершити реєстрацію" />
+        </p>
+    </div>
+}
