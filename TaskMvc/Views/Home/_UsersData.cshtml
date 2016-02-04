@@ -1,0 +1,35 @@
+﻿@using TaskMvc.Models
+
+    <th>Id</th>
+    <th>Login</th>
+    <th>Password</th>
+    <th>Дата створення</th>
+    <th>Email</th>
+    <th>Ім'я</th>
+    <th>Прізвище</th>
+    <th>По-батькові</th>
+    <th></th>
+    @foreach (UserModel user in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => user.User.Id)</td>
+            <td>@Html.DisplayFor(modelItem => user.User.UserName)</td>
+            <td>@Html.DisplayFor(modelItem => user.User.Password)</td>
+            <td>@Html.DisplayFor(modelItem => user.User.CreatedDate)</td>
+            <td>@Html.DisplayFor(modelItem => user.User.Email)</td>
+            <td>@Html.DisplayFor(modelItem => user.User.FirstName)</td>
+            <td>@Html.DisplayFor(modelItem => user.User.LastName)</td>
+            <td>@Html.DisplayFor(modelItem => user.User.MiddleName)</td>
+
+
+
+
+            <td>
+                @Html.ActionLink("Редагувати", "Edit", new { id = user.User.Id }) |
+                @Html.ActionLink("Видалити", "Delete", new { id = user.User.Id }, new { onclick = "return confirm('Ви впевненні що хочете видалити запис?' );" })
+
+
+            </td>
+        </tr>
+
+    }

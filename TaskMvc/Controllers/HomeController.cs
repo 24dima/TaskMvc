@@ -31,6 +31,12 @@ namespace TaskMvc.Controllers
 
             ViewData["FirstName"] = autorizeUser.FirstName;
             ViewData["LastName"] = autorizeUser.LastName;
+
+            if (Request.IsAjaxRequest())
+                return PartialView("_UsersData");
+
+            
+
             return View(model);
         }
 
